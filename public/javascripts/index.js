@@ -109,6 +109,9 @@ function initializeVideo() {
   const time = formatTime(videoDuration);
   duration.innerText = `${time.minutes}:${time.seconds}`;
   duration.setAttribute('datetime', `${time.minutes}m ${time.seconds}s`);
+  volume.value = 0;
+  volumeMute.classList.remove('hidden');
+  volumeButton.setAttribute('data-title', 'Unmute (m)');
 }
 
 // updateTimeElapsed indicates how far through the video

@@ -46,6 +46,10 @@ video {
   border-radius: 4px;
 }
 
+video::-webkit-media-controls {
+  display:none !important;
+}
+
 .video-controls {
   right: 0;
   left: 0;

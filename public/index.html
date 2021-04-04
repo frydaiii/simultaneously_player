@@ -17,8 +17,9 @@
         </svg>
       </div>
 
-      <video controls muted class="video" id="video" preload="metadata">
-        <source src="http://143.198.193.37:3000/Godzilla.vs.Kong.2021.1080p.AMZN.WEBRip.DDP5.1.Atmos.x264-MacacoVelho/Godzilla.vs.Kong.2021.1080p.AMZN.WEBRip.DDP5.1.Atmos.x264-MacacoVelho.mkv" type="video/mp4"></source>
+      <video controls muted class="video" id="video" crossorigin="anonymous" preload="metadata">
+        <source src="" type="video/mp4"></source>
+        <track id="sub" label="Vietnamese" kind="subtitles" srclang="vi" src="" default>
       </video>
 
       <div class="video-controls hidden" id="video-controls">
@@ -114,6 +115,7 @@
   <script>
     const urlParams = new URLSearchParams(window.location.search);
     document.getElementById('video').src = urlParams.get('src');
+    document.getElementById('sub').src = urlParams.get('sub');
   </script>
   <script src="/socket.io/socket.io.js"></script>
   <script src="javascripts/index.js"></script>

@@ -4,4 +4,4 @@
 ## Start
 ```npm install; npm start```
 ## How to use
-http://\<ip-address>:3001/?src=\<directVideoUrl>
+http://\<ip-address>:3001/?src=\<directVideoUrl>&sub=\<directWebVTT>
