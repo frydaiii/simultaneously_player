@@ -26,7 +26,6 @@ io.on('connection', async (socket) => {
         io.emit('setState', msg);
     });
     socket.on('togglePlay', msg => {
-        console.log(msg);
         io.emit('togglePlay', msg);
     });
     socket.on('skipAhead', skipTo => {
